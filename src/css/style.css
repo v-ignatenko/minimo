@@ -1,0 +1,249 @@
+body, html {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #626262;
+  background-color: #ffffff;
+  margin: 0;
+}
+.container {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+.container-small {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.container-fullwidth {
+	background-color: #f0f0f0;
+	max-width: 100%;
+	color: #333333;
+}
+h1,h2 {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 20px 0 30px 0;
+}
+.container-fullwidth h1,
+.container-fullwidth h2 {
+	color: #333333
+}
+.ubuntu {
+	color: #b4ad9e;
+	font-weight: 300;
+	font-family: 'Ubuntu', sans-serif;
+}
+.logo {
+	font-family: 'Inconsolata', monospace;
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	
+}
+a, button {
+	text-decoration: none;
+	color: #626262;
+	transition: 200ms ease;
+}
+a:hover {
+	 color: #000000;
+}
+.header {
+	padding: 70px 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+}
+.header .header-menu {
+	flex-basis: 53%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+}
+.header .header-menu a {
+	text-transform: uppercase;
+}
+.latest-post figure {
+	margin: 0;
+	overflow: hidden;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.latest-post-text {
+	padding: 100px 0 0 0;
+}
+.posts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+}
+.posts article {
+	flex-basis: 46.667%;
+	margin-top: 135px;
+}
+.posts article figure {
+	margin: 0 0 30px 0;
+	width: 100%;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.posts article figure img {
+	width: 100%;
+	flex-grow: 1;
+}
+.newsletter {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 135px;
+	padding: 70px 0;
+}
+.newsletter input, .newsletter button {
+	border: none;
+	background-color: transparent;
+	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+}
+.newsletter input {
+	width: 360px;
+	padding-right: 40px;
+	border-bottom: 1px solid #626262;
+	transform: translateX(40px);
+	padding: 10px 40px 10px 0;
+}
+.newsletter input:focus {
+	border-bottom: 1px solid #000000;
+}
+.newsletter button {
+	width: 40px;
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+	font-size: 20px;
+	color: #626262;
+}
+.newsletter button:hover {
+	color: #000000
+}
+.load-more-box {
+	text-align: center;
+}
+.load-more {
+	display: inline-block;
+	padding: 20px 30px;
+	margin: 135px 0;
+	border: 1px solid #626262;
+	font-size: 20px;
+}
+.load-more:hover {
+	border: 1px solid #000000;
+}
+.footer {
+	padding: 40px 0 50px 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: space-between;
+}
+.footer-menu a {
+	margin-right: 20px;
+}
+/*/////////////////////////////////////////////////////////
+//////////////////////media////////////////////////////
+/////////////////////////////////////////////////////////*/
+@media (max-width: 1060px) {
+	.container {
+		width: 100%;
+	}
+	.container-small {
+		width: 100%;
+	}
+}
+/*font-family: 'Ubuntu', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Inconsolata', monospace;*/
+@media screen and (max-width: 991px){
+	.latest-post figure img {
+	    width: 100%;
+	}
+	.container-small {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+
+		justify-content: center;
+
+		-ms-align-items: center;
+		align-items: center;
+
+		text-align: center;
+	}
+	article p {
+		padding: 10px;
+
+	}
+	.posts article {
+		width: 50%;
+	}
+
+}
+@media screen and (max-width: 767px) {
+	.header {
+		flex-direction: column;
+	}
+	.header-menu {
+		flex-direction: column;
+
+		text-align: center;
+
+
+	}
+	.posts article {
+		width: 100%;
+	}
+	.newsletter input {
+		width: auto;
+	}
+	h1, h2 {
+	    font-size: 25px;
+	}
+}
