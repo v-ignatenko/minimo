@@ -34,7 +34,7 @@ h1,h2 {
 }
 .logo {
 	font-family: 'Inconsolata', monospace;
-	color: #000000;
+	color: rgb(13, 212, 63)0%, 0%);
 	font-size: 30px;
 	letter-spacing: 6px;
 	text-transform: uppercase;
@@ -42,11 +42,11 @@ h1,h2 {
 }
 a, button {
 	text-decoration: none;
-	color: #626262;
+	color: #fd2b2b;
 	transition: 200ms ease;
 }
 a:hover {
-	 color: #000000;
+	 color: #fff;
 }
 .header {
 	padding: 70px 0;
